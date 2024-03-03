@@ -46,9 +46,9 @@ class PDFBuilder:
     def addQuestion(self, question):
         """Add the given question in the PDF."""
         style = ParagraphStyle(name='Custom',
-                                                  fontName='Helvetica-Bold',
-                                                  fontSize=12, 
-                                                  textColor='black')
+                               fontName='Helvetica-Bold',
+                               fontSize=12, 
+                               textColor='black')
         self.__paragraphs.append(Paragraph(question, style)) 
  
                
