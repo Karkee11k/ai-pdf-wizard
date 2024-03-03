@@ -6,7 +6,7 @@ from chatgpt import ChatGPT
 
 # loading environment variables
 load_dotenv('.env') 
-API_KEY = os.getenv('API_KEY')  # OpenAI API KEY
+API_KEY = '' # OpenAI API KEY
 
 
 def main():
@@ -19,7 +19,7 @@ def main():
         questions = file.read().split('\n') 
         
     pdfBuilder = PDFBuilder(title)  # PDFBuilder instance
-    chatgpt = ChatGPT(API_KEY)  # ChatGPT instance
+    chatgpt = ChatGPT(API_KEY)      # ChatGPT instance
     
     for question in questions: 
         pdfBuilder.addQuestion(question)
