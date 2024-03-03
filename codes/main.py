@@ -5,7 +5,7 @@ from build_pdfs import PDFBuilder
 from chatgpt import ChatGPT
 
 # loading environment variables
-load_dotenv('.env') 
+load_dotenv() 
 API_KEY = '' # OpenAI API KEY
 
 
